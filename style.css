@@ -1,3 +1,15 @@
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* ###################################### Estilo do Site para dispositivos de telas grande ############################################# */
 * {
     margin: 0;
@@ -5,10 +17,10 @@
   }
   /* setup das variaveis*/
   :root {
-    --verde-fundo: #07b578;
+    --verde-fundo: #51de7e;
     --branco-principal: #ffffff;
-    --fonte-principal: "Lustria";
-    --verde-principal: #5fb13b;
+    --fonte-principal: "Poppins";
+    --verde-principal: #27e275;
     --azul-principal: #0169b4;
     --verde-secundario: #313a22;
     --link: #0a4804;
@@ -48,20 +60,16 @@
   .container {
     margin-top: 50px;
     display: flex;
+    text-align: center;
+    display: flex;
+    justify-content: center;
   }
   
   /*estilos do cabeçalho*/
   .cabecalho {
     background-image: url("img/4.png");
   }
-  .img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
+  
   .logo__principal {
     margin-top: 100px;
     margin-left: 50px;
@@ -70,28 +78,22 @@
     text-align: center;
     margin-top: 200px;
     margin-bottom: 300px;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 400;
+    color: #000;
   }
-  .cabecalho__botao {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-top: 5%;
-    font-size: 25px;
-    font-weight: 400;
-  }
+  
   a.cabecalho__botao {
     width: 180px;
     height: 30px;
-    color: #fff;
+    color: #f6f6f6;
     padding: 20px;
     border: 5px solid #fff;
   }
   
   /* estilo seção 1*/
   .secao1__descricao {
-    width: 50%;
+    width: 100%;
   }
   .secao1__titulo {
     font-weight: 700;
@@ -103,6 +105,10 @@
     margin-top: 35px;
     color: var(--preto-titulo);
     font-size: 30px;
+  }
+  .secao1__imagem{
+    width: 100%;
+    height: 100%;
   }
   
   /* estilo seção 2*/
@@ -117,18 +123,17 @@
     color: var(--preto-titulo);
     font-size: 25px;
   }
-  .secao1__descricao,
   .secao2__img__subtitulo {
     padding: 2em;
   }
   .secao2__imagens {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 2em;
+    flex-direction: row;
+    justify-content:center;
+    padding: 1em;
   }
   .secao2__imagens img {
-    width: 95%;
+    width: 60%;
   }
   .secao2__titulo {
     margin: 50px 0px 30px 0px;
@@ -138,20 +143,7 @@
     color: var(--preto-titulo);
     font-size: 30px;
   }
-  
-  /* estilo seção 3*/
-  .secao3__imagem {
-    background-image: url("img/mel.png");
-  }
-  .secao3__texto {
-    margin: 30% 0 30% 0;
-  }
-  .secao3__info {
-    width: 95%;
-    padding: 1em;
-    text-align: center;
-  }
-  
+    
   /* estilo seção 4*/
   .secao4__titulo,
   .secao4__texto,
